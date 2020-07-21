@@ -5,4 +5,10 @@ class Restaurant
     @name = name
   end
 
+  def reviews
+    Review.all.collect |self|
+      self
+    end
+  end
+
 end
